@@ -12,11 +12,11 @@
 +closed  <-  .print("Close event from GUIInterface").
    
  +!verificar_lampada: ligada(false)  
- 	<-  .print("Algu�m DESLIGOU a Lampada").
+ 	<-  .print("Alguém DESLIGOU a Lâmpada").
  	
  +!verificar_lampada: ligada(true)  
- 	<-  .print("Algu�m LIGOU a Lampada").
+ 	<-  .print("Alguém LIGOU a Lâmpada").
  	
  +!ligar_lampada
  	<-  ligar;
- 		.print("Liguei a Lampada!").
+ 		.print("Liguei a Lâmpada!").

@@ -68,8 +68,8 @@ public class Camera extends GUIArtifact {
 		signal("closed");
 	}
 	
-// se necess�rio simular alguma coisa, usando uma thread JAVA, 
-//	pode-se chamar atualizar_artefato() e colocar as mudan�as  em update()	
+// se necessário simular alguma coisa, usando uma thread JAVA, 
+//	pode-se chamar atualizar_artefato() e colocar as mudanças  em update()	
 //	@OPERATION void update(){
 //	
 //	}
@@ -128,9 +128,9 @@ class InterfaceAC extends JFrame {
 						
 			JPanel panel = new JPanel();
 			JLabel pessoaL = new JLabel();
-			pessoaL.setText("Temperatura Atual:    ");
+			pessoaL.setText("Nome da pessoa:    ");
 			JLabel localL = new JLabel();
-			localL.setText("Temperatura Desejada: ");
+			localL.setText("Local atual: ");
 			setContentPane(panel);
 			
 			okButton = new JButton("ok");

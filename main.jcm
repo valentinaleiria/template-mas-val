@@ -15,7 +15,7 @@ mas main {
       focus: w.c1 
     }
 
-    agent ar_condicionado: ac.asl
+    agent ar_condicionado: ar_condicionado.asl
     agent camera: camera.asl
     agent cortina: cortina.asl
     agent lampada: lampada.asl

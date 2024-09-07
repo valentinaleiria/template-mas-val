@@ -12,10 +12,10 @@
 +closed  <-  .print("Close event from GUIInterface").
    
  +!verificar_ajuste: nivel_abertura(N) 
- 	<-  .print("Nivel de abertura ", N).
+ 	<-  .print("Nível de abertura da cortina: ", N).
  	
  +!abrir_cortina: nivel_abertura(N) 
- 	<-  .print("Nivel de abertura ANTES ", N);
+ 	<-  .print("Nível de abertura ANTES: ", N);
  		abrir;
  		?nivel_abertura(ND);
- 		.print("Nivel de abertura DEPOIS ", ND).
+ 		.print("Nível de abertura DEPOIS: ", ND).
