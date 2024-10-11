@@ -3,8 +3,27 @@
 /* Initial beliefs and rules */
 
 temperatura_de_preferencia(jonas,25).
+temperatura_atual(25).
+
+//inferencia
+//predicado :-predicado1 & predicado2 | (preferencia predicado3 |predicado4).
+
+reduzir_temp(C,P) :- temperatura_atual(TA) & temperatura_de_preferencia(_,TP) & TA>TP & C = TA-TP.
+aumentar_temp(C,P) :- temperatura_atual(TA) & temperatura_de_preferencia(_,TP) & TA<TP & C = TA-TP.
+
+!avisar.
++!avisar <- .broadcast(tell, temperatura_atual(25));
+			.send ("cortina", achieve, fechar_cortina).
 
 /* Initial goals */
+
+!verificar.
+
+//planos
+// +!desejo: <contexto> <-ações
++!verificar: reduzir_temp(C) <- .print("reduzir temperatura", C).
++!verificar: aumentar_temp(C) <- .print("aumentar temperatura", C).
++!verificar <- .print ("desligar ar-condicionado").
 
 !inicializar_AC.
 
